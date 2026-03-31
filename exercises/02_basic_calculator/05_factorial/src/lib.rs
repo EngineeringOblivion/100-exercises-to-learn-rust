@@ -10,13 +10,11 @@
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
 
-fn factorial(n: u16) -> u16 {
-    let mut output = 1;
-    for n in 1..=n {
-        output *= n
+pub fn factorial(n: u32) -> u32 {
+    if n <= 1 {
+        return 1;
     }
-
-    return output;
+    n * factorial(n - 1)
 }
 
 #[cfg(test)]
