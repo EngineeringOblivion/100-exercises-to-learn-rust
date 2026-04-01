@@ -1,12 +1,13 @@
 [book]
 authors = ["Luca Palmieri"]
 language = "en"
-multilingual = false
+#multilingual = false
 src = "src"
 title = "100 Exercises To Learn Rust"
 
 [preprocessor.exercise-linker]
 exercise_root_url = "https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/exercises"
+optional = true
 
 [preprocessor.link-shortener]
 base_url = "https://ruex.io"
@@ -14,6 +15,7 @@ renderers = ["pandoc"]
 mapping = "link2alias.json"
 verify = false
 after = ["exercise-linker"]
+optional = true
 
 [output.html]
 git-repository-url = "https://github.com/mainmatter/100-exercises-to-learn-rust"
