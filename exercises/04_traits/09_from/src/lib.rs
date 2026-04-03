@@ -5,6 +5,6 @@ pub struct WrappingU32 {
 }
 
 fn example() {
-    let wrapping: WrappingU32 = 42.into();
-    let wrapping = WrappingU32::from(42);
+    // let wrapping: WrappingU32 = 42.into();
+    let wrapping = WrappingU32::from(WrappingU32 { value: 42 });
 }
